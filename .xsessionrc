@@ -1,0 +1,5 @@
+# setting up monitors
+xrandr --output HDMI-3 --left-of LVDS-1
+
+# setting wallpaper
+feh --bg-fill ~/Pictures/iceberg.jpg

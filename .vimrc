@@ -7,3 +7,5 @@ packloadall
  
 autocmd BufNewFile,BufFilePre,BufRead *.rmd,*.Rmd set filetype=markdown              
 autocmd Filetype markdown map <F5> :!Rscript -e "rmarkdown::render('%', 'pdf_document')"<CR>                                                                                              
+autocmd Filetype markdown set spell!
+autocmd Filetype markdown SoftPencil

@@ -11,4 +11,4 @@ autocmd Filetype markdown map <F5> :!Rscript -e "rmarkdown::render('%', 'pdf_doc
 autocmd Filetype markdown set spell
 autocmd Filetype markdown SoftPencil
 
-autocmd filetype cpp nnoremap <F5> :w <bar> exec '!g++ '.shellescape('%').' -o '.shellescape('%:r').' && ./'.shellescape('%:r')<CR>
+autocmd filetype cpp map <F5> :w <bar> exec '!g++ '.shellescape('%').' && ./a.out && rm a.out'<CR>
